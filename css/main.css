@@ -266,22 +266,12 @@
   font-size: 13px;
 }
 @media screen and (max-width: 992px) {
-  .el-flight .el-schedule__flight-col:nth-child(1), .el-flight .el-schedule__flight-col:nth-child(2), .el-flight .el-schedule__flight-col:nth-child(3), .el-flight .el-schedule__flight-col:nth-child(4), .el-flight .el-schedule__flight-col:nth-child(5), .el-flight .el-schedule__flight-col:nth-child(6) {
-    width: 33.33%;
-  }
-  .el-flight .el-schedule__flight-col:nth-child(7) {
-    width: 100%;
-  }
   .el-flight .el-schedule__flight-col:nth-child(7) > button {
     display: block;
     margin: 10px auto;
   }
 }
 .el-flight .el-schedule__flight-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
   border: 1px solid #e6e6e6;
   border-radius: 5px;
   padding: 10px;
@@ -300,6 +290,17 @@
 .el-flight .el-schedule__flight-item .landing-time div:first-child {
   font-size: 1.125rem;
   font-weight: 800;
+}
+@media screen and (max-width: 992px) {
+  .el-flight .el-schedule__flight-item .take-of-time div:first-child,
+.el-flight .el-schedule__flight-item .landing-time div:first-child {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .el-flight .el-schedule__flight-item .flight-time {
+    display: none;
+  }
 }
 .el-flight .el-schedule__flight-item .flight-time div:first-child {
   position: relative;
@@ -333,9 +334,15 @@
   font-size: 18px;
   font-weight: 800;
 }
-.el-flight .el-schedule__flight-item .flight-detail a {
+@media screen and (max-width: 992px) {
+  .el-flight .el-schedule__flight-item .flight-price {
+    font-size: 14px;
+  }
+}
+.el-flight .el-schedule__flight-item .flight-detail div {
   color: #000;
   text-decoration: underline;
+  cursor: pointer;
 }
 .el-flight .el-schedule__flight-item .choose-btn {
   background: #006790;
@@ -348,6 +355,62 @@
 }
 .el-flight .el-schedule__flight-more .more-btn {
   background: #006790;
+}
+.el-flight .el-schedule .tab-dropdown {
+  background: rgba(0, 103, 144, 0.04);
+  padding: 10px;
+  width: 100%;
+}
+.el-flight .el-schedule .tab-dropdown .nav-item {
+  padding: 10px;
+}
+.el-flight .el-schedule .tab-dropdown .nav-item a {
+  color: #a0a0a0;
+}
+.el-flight .el-schedule .tab-dropdown .nav-item a:hover {
+  text-decoration: none;
+}
+.el-flight .el-schedule .tab-dropdown .nav-item a.active {
+  color: #006790;
+  font-weight: 500;
+}
+.el-flight .el-schedule__tab-heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  margin: 10px 0;
+}
+.el-flight .el-schedule__tab-body {
+  padding: 15px;
+  background: #fff;
+}
+.el-flight .el-schedule__tab-body.body-table {
+  overflow-x: scroll;
+}
+@media screen and (max-width: 576px) {
+  .el-flight .el-schedule__tab-body.body-table {
+    font-size: 11px;
+  }
+}
+.el-flight .el-schedule__tab-body .table thead th {
+  vertical-align: bottom;
+  border-bottom: 1px dashed black;
+}
+.el-flight .el-schedule__tab-body .table th,
+.el-flight .el-schedule__tab-body .table td {
+  border-top: 0;
+}
+.el-flight .el-schedule__tab-col:nth-child(1) {
+  font-weight: 600;
+}
+.el-flight .el-schedule__tab-col .row div:last-child {
+  margin-left: auto;
+}
+.el-flight .el-schedule__tab-col > div:not(:last-child) {
+  margin-bottom: 5px;
+}
+.el-flight .el-schedule__tab-flight {
+  color: #006790;
 }
 .el-flight .el-schedule__text {
   font-size: 11px;
@@ -363,6 +426,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
+}
+.el-flight .el-schedule__ticket-row {
+  display: flex;
+  align-items: center;
+}
+.el-flight .el-schedule__ticket-row:not(:last-child) {
+  margin-bottom: 5px;
+}
+.el-flight .el-schedule__ticket-row div:first-child {
+  font-weight: 500;
   margin-right: 10px;
 }
 .el-flight .el-schedule__info {

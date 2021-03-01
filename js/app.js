@@ -1,4 +1,5 @@
 const myApp = () => {
+  handleDropdownDetail();
   dropdownToggle();
   inputNumberCustom();
   datePicker();
@@ -145,6 +146,14 @@ function dropdownToggle() {
   $(document).ready(function () {
     $("#dropdownPassengers").click(function () {
       $(".dropdown-menu").toggle();
+    });
+  });
+}
+
+function handleDropdownDetail() {
+  $(".tabsID").each(function (i) {
+    $(this).on("click", function () {
+      $(`.tab-content-id${i}`).toggle();
     });
   });
 }
