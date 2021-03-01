@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>elines</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+      html {
+        font-family: 'Raleway', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="el-flight">
+      <div class="bg-light navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container"><a class="navbar-brand" href="#"><img src="./images/logo_elines.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active"><a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <header class="el-header"> 
+        <div class="el-header__step container">
+          <div class="row justify-content-between">
+            <div class="col-md">
+              <div class="el-header__step-item active"><span>1.</span><span>Lựa chọn chuyến bay</span></div>
+            </div>
+            <div class="col-md">
+              <div class="el-header__step-item"><span>2.</span><span>Nhập thông tin khách</span></div>
+            </div>
+            <div class="col-md">
+              <div class="el-header__step-item"><span>3.</span><span>Xác nhận thanh toán</span></div>
+            </div>
+            <div class="col-md">
+              <div class="el-header__step-item el-header__change-btn"><span class="fw-normal">Thay đổi</span><i class="far fa-edit"></i></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="el-schedule container">
+        <div class="row"> 
+          <div class="col-md-8 col-lg-8">
+            <div class="el-schedule__flight">
+              <div class="el-schedule__text border">Chiều đi</div>
+              <div class="el-schedule__info"> 
+                <div class="el-schedule__info-flight"><span>Hà Nội(HAN)</span><i class="fas fa-fighter-jet"></i><span>Hồ Chí Minh(SGN)</span></div>
+                <div class="el-schedule__info-time">Thứ năm, 04/03/2021(21/01 ÂL), 1 khách</div>
+              </div>
+            </div>
+            <div class="el-schedule__timestamp">
+              <div class="el-schedule__timestamp-items" id="timestamp">
+                <div class="active">Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+                <div>Thứ 2 - 01.12</div>
+              </div>
+            </div>
+            <div class="el-schedule__flight-list"> 
+              <div class="el-schedule__flight-item">
+                <div class="el-schedule__flight-col flight-company">
+                  <div class="flight-company__image"><img src="./images/VU.png" alt=""></div>
+                  <div class="flight-company__name">VU751</div>
+                </div>
+                <div class="el-schedule__flight-col take-of-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-time">
+                  <div>2 tiếng 30p</div>
+                  <div>Bay thẳng</div>
+                </div>
+                <div class="el-schedule__flight-col landing-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-price">510.000đ</div>
+                <div class="el-schedule__flight-col flight-detail"> <a href="#">Chi tiết</a></div>
+                <div class="el-schedule__flight-col flight-info">
+                  <button class="button btn btn-info choose-btn" type="button" data-toggle="modal" data-target=".bd-modal-lg">Chọn</button>
+                  <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="flight-info__header">
+                          <h2>Thông tin chuyến bay</h2>
+                        </div>
+                        <div class="flight-info__body">
+                          <div class="flight-info__direction"><span>Chiều đi </span><span>thứ năm, 4 tháng 3 năm 2021</span></div>
+                          <div class="flight-info__detail"> 
+                            <div class="flight-info__detail-col">
+                              <div class="flight-info__image"><img src="./images/VU.png" alt=""></div>
+                              <div class="flight-info__name">VU751</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>21:30</div>
+                              <div>Hà Nội (HAN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>23:40</div>
+                              <div>Hồ Chí Minh (SGN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>2 tiếng 10p</div>
+                              <div>Bay thẳng</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <button class="button btn btn-info flight-info__change-btn">Thay đổi</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flight-info__footer">
+                          <div class="flight-info__temporary-price temporary-price">
+                            <div class="temporary-price__price">989.000 VND / khách</div>
+                            <div class="temporary-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div class="flight-info__total-price total-price">
+                            <div class="total-price__price">Tổng cộng: 989.000 VND</div>
+                            <div class="total-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div>
+                            <button class="button btn btn-info flight-info__book">Đặt vé</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="el-schedule__flight-item">
+                <div class="el-schedule__flight-col flight-company">
+                  <div class="flight-company__image"><img src="./images/VU.png" alt=""></div>
+                  <div class="flight-company__name">VU751</div>
+                </div>
+                <div class="el-schedule__flight-col take-of-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-time">
+                  <div>2 tiếng 30p</div>
+                  <div>Bay thẳng</div>
+                </div>
+                <div class="el-schedule__flight-col landing-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-price">510.000đ</div>
+                <div class="el-schedule__flight-col flight-detail"> <a href="#">Chi tiết</a></div>
+                <div class="el-schedule__flight-col flight-info">
+                  <button class="button btn btn-info choose-btn" type="button" data-toggle="modal" data-target=".bd-modal-lg">Chọn</button>
+                  <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="flight-info__header">
+                          <h2>Thông tin chuyến bay</h2>
+                        </div>
+                        <div class="flight-info__body">
+                          <div class="flight-info__direction"><span>Chiều đi </span><span>thứ năm, 4 tháng 3 năm 2021</span></div>
+                          <div class="flight-info__detail"> 
+                            <div class="flight-info__detail-col">
+                              <div class="flight-info__image"><img src="./images/VU.png" alt=""></div>
+                              <div class="flight-info__name">VU751</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>21:30</div>
+                              <div>Hà Nội (HAN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>23:40</div>
+                              <div>Hồ Chí Minh (SGN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>2 tiếng 10p</div>
+                              <div>Bay thẳng</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <button class="button btn btn-info flight-info__change-btn">Thay đổi</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flight-info__footer">
+                          <div class="flight-info__temporary-price temporary-price">
+                            <div class="temporary-price__price">989.000 VND / khách</div>
+                            <div class="temporary-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div class="flight-info__total-price total-price">
+                            <div class="total-price__price">Tổng cộng: 989.000 VND</div>
+                            <div class="total-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div>
+                            <button class="button btn btn-info flight-info__book">Đặt vé</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="el-schedule__flight-item">
+                <div class="el-schedule__flight-col flight-company">
+                  <div class="flight-company__image"><img src="./images/VU.png" alt=""></div>
+                  <div class="flight-company__name">VU751</div>
+                </div>
+                <div class="el-schedule__flight-col take-of-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-time">
+                  <div>2 tiếng 30p</div>
+                  <div>Bay thẳng</div>
+                </div>
+                <div class="el-schedule__flight-col landing-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-price">510.000đ</div>
+                <div class="el-schedule__flight-col flight-detail"> <a href="#">Chi tiết</a></div>
+                <div class="el-schedule__flight-col flight-info">
+                  <button class="button btn btn-info choose-btn" type="button" data-toggle="modal" data-target=".bd-modal-lg">Chọn</button>
+                  <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="flight-info__header">
+                          <h2>Thông tin chuyến bay</h2>
+                        </div>
+                        <div class="flight-info__body">
+                          <div class="flight-info__direction"><span>Chiều đi </span><span>thứ năm, 4 tháng 3 năm 2021</span></div>
+                          <div class="flight-info__detail"> 
+                            <div class="flight-info__detail-col">
+                              <div class="flight-info__image"><img src="./images/VU.png" alt=""></div>
+                              <div class="flight-info__name">VU751</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>21:30</div>
+                              <div>Hà Nội (HAN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>23:40</div>
+                              <div>Hồ Chí Minh (SGN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>2 tiếng 10p</div>
+                              <div>Bay thẳng</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <button class="button btn btn-info flight-info__change-btn">Thay đổi</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flight-info__footer">
+                          <div class="flight-info__temporary-price temporary-price">
+                            <div class="temporary-price__price">989.000 VND / khách</div>
+                            <div class="temporary-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div class="flight-info__total-price total-price">
+                            <div class="total-price__price">Tổng cộng: 989.000 VND</div>
+                            <div class="total-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div>
+                            <button class="button btn btn-info flight-info__book">Đặt vé</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="el-schedule__flight-item">
+                <div class="el-schedule__flight-col flight-company">
+                  <div class="flight-company__image"><img src="./images/VU.png" alt=""></div>
+                  <div class="flight-company__name">VU751</div>
+                </div>
+                <div class="el-schedule__flight-col take-of-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-time">
+                  <div>2 tiếng 30p</div>
+                  <div>Bay thẳng</div>
+                </div>
+                <div class="el-schedule__flight-col landing-time">
+                  <div>05:45</div>
+                  <div>HAN</div>
+                </div>
+                <div class="el-schedule__flight-col flight-price">510.000đ</div>
+                <div class="el-schedule__flight-col flight-detail"> <a href="#">Chi tiết</a></div>
+                <div class="el-schedule__flight-col flight-info">
+                  <button class="button btn btn-info choose-btn" type="button" data-toggle="modal" data-target=".bd-modal-lg">Chọn</button>
+                  <div class="modal fade bd-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="flight-info__header">
+                          <h2>Thông tin chuyến bay</h2>
+                        </div>
+                        <div class="flight-info__body">
+                          <div class="flight-info__direction"><span>Chiều đi </span><span>thứ năm, 4 tháng 3 năm 2021</span></div>
+                          <div class="flight-info__detail"> 
+                            <div class="flight-info__detail-col">
+                              <div class="flight-info__image"><img src="./images/VU.png" alt=""></div>
+                              <div class="flight-info__name">VU751</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>21:30</div>
+                              <div>Hà Nội (HAN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>23:40</div>
+                              <div>Hồ Chí Minh (SGN)</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <div>2 tiếng 10p</div>
+                              <div>Bay thẳng</div>
+                            </div>
+                            <div class="flight-info__detail-col">
+                              <button class="button btn btn-info flight-info__change-btn">Thay đổi</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="flight-info__footer">
+                          <div class="flight-info__temporary-price temporary-price">
+                            <div class="temporary-price__price">989.000 VND / khách</div>
+                            <div class="temporary-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div class="flight-info__total-price total-price">
+                            <div class="total-price__price">Tổng cộng: 989.000 VND</div>
+                            <div class="total-price__vat">đã bao gồm thuế phí</div>
+                          </div>
+                          <div>
+                            <button class="button btn btn-info flight-info__book">Đặt vé</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="el-schedule__flight-more">
+              <button class="button btn btn-info more-btn" type="button">Xem thêm chuyến bay</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="el-schedule__right">
+              <div class="el-schedule__right-heading">
+                <div><i class="fas fa-sliders-h"></i></div>
+                <div> <span>Xóa bộ lọc</span><i class="fas fa-times"></i></div>
+              </div>
+              <div id="accordion">
+                <div class="card pb-3">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn el-schedule__accordion-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <div>Hiển thị giá</div><i class="fas fa-angle-down"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="collapseOne" aria-labelledby="headingOne">
+                    <div class="card-body">
+                      <div class="form-check custom-control custom-radio">
+                        <input class="form-check-input custom-control-input" id="exampleRadios1" type="radio" name="exampleRadios" value="option1" checked="">
+                        <label class="form-check-label custom-control-label" for="exampleRadios1">Giá chưa có thuế phí</label>
+                      </div>
+                      <div class="form-check custom-control custom-radio">
+                        <input class="form-check-input custom-control-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2">
+                        <label class="form-check-label custom-control-label" for="exampleRadios2">Giá gồm thuế phí cho một người lớn</label>
+                      </div>
+                      <div class="form-check custom-control custom-radio">
+                        <input class="form-check-input custom-control-input" id="exampleRadios3" type="radio" name="exampleRadios" value="option2">
+                        <label class="form-check-label custom-control-label" for="exampleRadios3">Tổng giá</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn collapsed el-schedule__accordion-title" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <div>Chiều đi</div><i class="fas fa-angle-down"></i>
+                      </button>
+                    </h5>
+                  </div>
+                  <div class="collapse show" id="collapseTwo" aria-labelledby="headingTwo">
+                    <div class="card-body el-schedule__accordion-item"> 
+                      <div class="card-header" id="heading1">
+                        <h5 class="mb-0">
+                          <button class="btn collapsed el-schedule__accordion-title" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div>Theo giá(ĐVT: Triệu đồng)</div><i class="fas fa-angle-down"></i>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="collapse1" aria-labelledby="heading1">
+                        <div class="card-body">
+                          <div class="multi-range">
+                            <input id="lower" type="range" min="0" max="100" value="5">
+                            <input id="upper" type="range" min="0" max="100" value="45">
+                          </div>
+                          <div class="el-schedule__range-price"> 
+                            <div class="form-group mr-3">
+                              <label for="exampleInputEmail1">Từ</label>
+                              <input class="form-control" id="from" type="number" value="5">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Đến</label>
+                              <input class="form-control" id="to" type="number" value="45">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-header" id="heading2">
+                        <h5 class="mb-0">
+                          <button class="btn collapsed el-schedule__accordion-title" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <div>THỜI GIAN KHỞI HÀNH</div><i class="fas fa-angle-down"></i>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="collapse2" aria-labelledby="heading2">
+                        <div class="card-body">
+                          <div class="el-schedule__departure-time row no-gutters">
+                            <div class="col"><img src="./images/sunrise.svg"><span>00-06</span></div>
+                            <div class="col"><img src="./images/sun.svg"><span>00-06</span></div>
+                            <div class="col"><img src="./images/sunset.svg"><span>00-06</span></div>
+                            <div class="col"><img src="./images/moon.svg"><span>00-06</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-header" id="heading3">
+                        <h5 class="mb-0">
+                          <button class="btn collapsed el-schedule__accordion-title" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <div>HÃNG HÀNG KHÔNG</div><i class="fas fa-angle-down"></i>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="collapse3" aria-labelledby="heading3">
+                        <div class="card-body">
+                          <div class="form-check custom-control custom-checkbox">
+                            <input class="form-check-input custom-control-input" id="checkbox1" type="checkbox" name="exampleRadios" value="option1">
+                            <label class="form-check-label custom-control-label" for="checkbox1"><span>Viettravel Airlines </span><img src="./images/QH.png"></label>
+                          </div>
+                          <div class="form-check custom-control custom-checkbox">
+                            <input class="form-check-input custom-control-input" id="checkbox2" type="checkbox" name="exampleRadios" value="option2">
+                            <label class="form-check-label custom-control-label" for="checkbox2"><span>Viettravel Airlines </span><img src="./images/VJ.png"></label>
+                          </div>
+                          <div class="form-check custom-control custom-checkbox">
+                            <input class="form-check-input custom-control-input" id="checkbox3" type="checkbox" name="exampleRadios" value="option2">
+                            <label class="form-check-label custom-control-label" for="checkbox3"><span>Viettravel Airlines </span><img src="./images/VU.png"></label>
+                          </div>
+                          <div class="form-check custom-control custom-checkbox">
+                            <input class="form-check-input custom-control-input" id="checkbox4" type="checkbox" name="exampleRadios" value="option2">
+                            <label class="form-check-label custom-control-label" for="checkbox4"><span>Viettravel Airlines </span><img src="./images/BL.png"></label>
+                          </div>
+                          <div class="form-check custom-control custom-checkbox">
+                            <input class="form-check-input custom-control-input" id="checkbox5" type="checkbox" name="exampleRadios" value="option2">
+                            <label class="form-check-label custom-control-label" for="checkbox5"><span>Viettravel Airlines </span><img src="./images/VN.png"></label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-header" id="heading4">
+                        <h5 class="mb-0">
+                          <button class="btn collapsed el-schedule__accordion-title" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <div>THỜI GIAN TRANSIT</div><i class="fas fa-angle-down"></i>
+                          </button>
+                        </h5>
+                      </div>
+                      <div class="collapse show" id="collapse4" aria-labelledby="heading4">
+                        <div class="card-body">
+                          <div class="el-schedule__transit"> 
+                            <button class="btn btn-outline-info" type="button">0h-15h</button>
+                            <button class="btn btn-outline-info" type="button">5h-10h</button>
+                            <button class="btn btn-outline-info" type="button">10h-15h</button>
+                            <button class="btn btn-outline-info" type="button">15h+</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="el-footer">
+        <div class="container">
+          <div class="row align-items-center py-5 px-3"><img class="el-footer__company-image" src="./images/logo_elines.png" alt="logo">
+            <div class="el-footer__company-name">CÔNG TY CỔ PHẦN ELINES</div>
+          </div>
+          <div class="row">
+            <div class="col-md-5">
+              <div class="el-footer__row">
+                <div class="el-footer__row-title">Hà Nội</div>
+                <div class="el-footer__row-content"><span>Địa chỉ 1:</span><span>Tầng 3, Số 333 Trần Khát Chân, Quận Hai Bà Trưng</span></div>
+                <div class="el-footer__row-content"><span>Địa chỉ 1:</span><span>Tầng 3, Số 333 Trần Khát Chân, Quận Hai Bà Trưng</span></div>
+              </div>
+              <div class="el-footer__row">
+                <div class="el-footer__row-title">Hồ Chí Minh</div>
+                <div class="el-footer__row-content"><span>Địa chỉ 1:</span><span>Tầng 3, Số 333 Trần Khát Chân, Quận Hai Bà Trưng</span></div>
+                <div class="el-footer__row-content"><span>Mã số thuế:</span><span>0104511457</span></div>
+                <div class="el-footer__row-content"><span>Email:</span><span>contact@elines.vn</span></div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="el-footer__row-title">Thông tin khác</div>
+              <div class="el-footer__row-content">
+                <div>Chính sách bảo mật</div>
+                <div>Văn hóa doanh nghiệp</div>
+                <div>Cơ hội việc làm</div>
+                <div>Dành cho công ty du lịch</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="el-footer__socials"> <img src="./images/ico-fb.svg"><img src="./images/ico-tumblt.svg"><img src="./images/ico-vimeo.svg"></div>
+            </div>
+          </div>
+          <div class="row"> 
+            <div class="el-footer__copyright">Ⓒ 2018 - http://elines.vn</div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
